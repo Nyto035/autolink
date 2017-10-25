@@ -9,7 +9,7 @@ angular.module('starter.routes', [])
     views: {
           "content": {
               templateUrl: 'templates/menu.html',
-              controller: 'app.controllers.aBusinessController'
+              controller: 'app.controllers.homeController'
           }
       }
   })
@@ -73,7 +73,7 @@ angular.module('starter.routes', [])
       views: {
         'menuContent@app': {
           templateUrl: 'templates/home_screen.html',
-          controller: 'app.controllers.businessHomeController'
+          controller: 'app.controllers.homeController'
         }
       }
   })

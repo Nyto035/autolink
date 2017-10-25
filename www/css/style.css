@@ -327,13 +327,15 @@ input{
     padding-left: 3px;
 }
 .button.button-balanced,.bar.bar-balanced{
-    background-color: rgb(0,150,136);
+    /*background-color: rgb(0,150,136);*/
+    background-color: #2196F3;
 }
 .text-success{
     color: rgb(0,150,136) !important;
 }
 .button.button-balanced.activated{
-    background-color: rgb(0,150,136);
+    /*background-color: rgb(0,150,136);*/
+    background-color: #2196F3;
 }
 .button.button-positive{
     background-color: #2196F3;
@@ -702,8 +704,10 @@ div.title-left{
     color: #666;
 }
 .button-outline{
-    border:2px solid rgb(0,150,136) !important;
-    color: rgb(0,150,136) !important;
+    /*border:2px solid rgb(0,150,136) !important;
+    color: rgb(0,150,136) !important;*/
+    border:2px solid #2196F3 !important;
+    color: #2196F3 !important;
 }
 button.ion-log-out{
     font-size: 1.2rem !important;
@@ -713,4 +717,7 @@ button.ion-log-out:before{
 }
 .biz-bar>.title-left{
     text-align: center !important;
+}
+.bar .title.title-left{
+    margin-left:25px;
 }
