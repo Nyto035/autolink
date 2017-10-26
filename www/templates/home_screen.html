@@ -2,114 +2,164 @@
 
   <ion-content style="background-color: #edecec;">
     <ion-card>
-        <div class="list padding pad-t-30 menu-cont" style="position: relative;">
-            <div class="login-menu col-6 margin-r-8">
-                <!-- <div class="form-logo">
-                </div> -->
-            <div class="col-12 grid-header margin-b-0" ng-click="goToState('app.sales')">
+        <div class="login-menu col-12 margin-b-5 pad-b-10 pad-l-15">
+            <span>Welcome {{user.names}}</span>
+        </div>
+        <div class="padding pad-t-30 pad-l-15 menu-cont" style="position: relative;">
+            <div class="login-menu col-4 margin-r-10">
+                <div class="col-12 grid-header margin-b-0" ng-click="goToState('app.sales')">
                     <div class="col-12">
-                        <div class="col-xs-12 text-center">
-                            <b>
-                                <i class="icon ion-ios-cart
-                                text-info fs-40"></i>
-                            </b>
+                        <div class="col-xs-12 text-center msg-icon-flex">
+                            <div class="icon-cont">
+                                <b>
+                                    <i class="icon ion-settings
+                                    text-white fs-20"></i>
+                                </b>
+                            </div>
                         </div>
                         <div class="col-xs-12 menu-labels">
-                            <small>Sell Items</small>
+                            <small>Garage</small>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="login-menu col-6 margin-l-8" ng-click="goToState('app.purchases')">
-                <!-- <div class="form-logo">
-                </div> -->
+            <div class="login-menu col-4 margin-r-10" ng-click="goToState('app.purchases')">
                 <div class="col-12 grid-header margin-b-0">
                     <div class="col-12 text-center">
                         <div class="col-xs-12">
-                            <b>
-                                <i class="icon ion-bag fs-40 text-success"></i>
-                            </b>
+                            <div class="icon-cont bg-success">
+                                <b>
+                                    <i class="icon ion-android-bus fs-20 text-white"></i>
+                                </b>
+                            </div>
                         </div>
                         <div class="col-xs-12 menu-labels">
-                            <small>Purchase Items</small>
+                            <small>Tow Trucks</small>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="list padding pad-t-0 menu-cont" style="position: relative;">
-            <div class="login-menu col-6 margin-r-8" ng-click="goToState('app.expenses')">
-                <!-- <div class="form-logo">
-                </div> -->
+            <div class="login-menu col-4 margin-r-8" ng-click="goToState('app.purchases')">
                 <div class="col-12 grid-header margin-b-0">
-                    <div class="col-12">
-                        <div class="col-xs-12 text-center">
-                            <b>
-                                <i class="icon ion-card text-warning fs-50"></i>
-                            </b>
+                    <div class="col-12 text-center">
+                        <div class="col-xs-12">
+                            <div class="icon-cont bg-warning">
+                                <b>
+                                    <i class="icon ion-lock-combination fs-18 text-white"></i>
+                                </b>
+                            </div>
                         </div>
                         <div class="col-xs-12 menu-labels">
-                            <small>Record an Expense</small>
+                            <small>Motor Insurance</small>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="login-menu col-6 margin-l-8" ui-sref="app.dashboard">
-                <!-- <div class="form-logo">
-                </div> -->
-                <div class="col-12 grid-item">
-                    <div class="col-12 grid-title text-center pad-r-9">
-                        <div class="col-12" style="border:1px solid #e0e0e0;font-size: 0.9rem;">
-                            <div class="col-12">
-                                <div class="col-8 text-left pad-l-5 pad-t-5">
-                                    <small>Sales</small>
-                                </div>
-                                <div class="col-3">
-                                    <small>XXX</small>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="col-8 text-left pad-l-5">
-                                    <small>Expenses</small>
-                                </div>
-                                <div class="col-3">
-                                    <small>(XX)</small>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="col-8 text-left pad-l-5">
-                                    <small>Profit</small>
-                                </div>
-                                <div class="col-3" style="border-top: 1px solid #e0e0e0;
-                                border-bottom: 1px solid #e0e0e0;">
-                                    <small>XXX</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 menu-labels">
-                        <small>Business Summary</small>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <div class="list padding pad-t-0 menu-cont" style="position: relative;">
-            <div class="login-menu col-6 margin-r-8">
-            <div class="col-12 grid-header" ui-sref="app.business_information">
-                    <div class="col-12 grid-title">
-                        <div class="col-xs-12 text-center">
-                            <b>
-                                <i class="icon ion-android-apps
-                                text-info fs-40"></i>
-                            </b>
+        <!-- Row two -->
+        <div class="padding pad-t-0 pad-l-15 menu-cont" style="position: relative;">
+            <div class="login-menu col-4 margin-r-10">
+                <div class="col-12 grid-header margin-b-0" ng-click="goToState('app.sales')">
+                    <div class="col-12">
+                        <div class="col-xs-12 text-center msg-icon-flex">
+                            <div class="icon-cont bg-cyan">
+                                <b>
+                                    <i class="icon ion-android-boat
+                                    text-white fs-20"></i>
+                                </b>
+                            </div>
                         </div>
-                        <div class="col-xs-12 pad-t-5 text-center">
-                            <small>Business Information</small>
+                        <div class="col-xs-12 menu-labels">
+                            <small>Freight & Imports</small>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> -->
+            <div class="login-menu col-4 margin-r-10" ng-click="goToState('app.purchases')">
+                <div class="col-12 grid-header margin-b-0">
+                    <div class="col-12 text-center">
+                        <div class="col-xs-12">
+                            <div class="icon-cont bg-royal">
+                                <b>
+                                    <i class="icon ion-android-car fs-20 text-white"></i>
+                                </b>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 menu-labels">
+                            <small>Car Hire & Tours</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="login-menu col-4 margin-r-8" ng-click="goToState('app.purchases')">
+                <div class="col-12 grid-header margin-b-0">
+                    <div class="col-12 text-center">
+                        <div class="col-xs-12">
+                            <div class="icon-cont bg-danger">
+                                <b>
+                                    <i class="icon ion-ios-speedometer-outline fs-18 text-white"></i>
+                                </b>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 menu-labels">
+                            <small>Driving School</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Row Three -->
+        <div class="padding pad-t-0 pad-l-15 menu-cont" style="position: relative;">
+            <div class="login-menu col-4 margin-r-10">
+                <div class="col-12 grid-header margin-b-0" ng-click="goToState('app.sales')">
+                    <div class="col-12">
+                        <div class="col-xs-12 text-center msg-icon-flex">
+                            <div class="icon-cont bg-default pad-t-8">
+                                <b>
+                                    <i class="icon ion-ios-paper
+                                    text-white fs-18"></i>
+                                </b>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 menu-labels">
+                            <small>Logistics</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="login-menu col-4 margin-r-10" ng-click="goToState('app.purchases')">
+                <div class="col-12 grid-header margin-b-0">
+                    <div class="col-12 text-center">
+                        <div class="col-xs-12">
+                            <div class="icon-cont bg-info">
+                                <b>
+                                    <i class="icon ion-earth fs-20 text-white"></i>
+                                </b>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 menu-labels">
+                            <small>Dealerships</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="login-menu col-4 margin-r-8" ng-click="goToState('app.purchases')">
+                <div class="col-12 grid-header margin-b-0">
+                    <div class="col-12 text-center">
+                        <div class="col-xs-12">
+                            <div class="icon-cont bg-teal pad-t-8">
+                                <b>
+                                    <i class="icon ion-chatbox-working fs-18 text-white"></i>
+                                </b>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 menu-labels">
+                            <small>Others</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </ion-card>
 
   </ion-content>

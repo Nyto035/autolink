@@ -236,6 +236,9 @@ input:focus ~ .highlight, select:focus ~ .highlight {
 .pad-t-5{
     padding-top: 5px;
 }
+.pad-t-8{
+    padding-top: 8px;
+}
 .pad-t-10{
     padding-top: 10px;
 }
@@ -353,6 +356,9 @@ span.block{
 }
 .margin-r-8{
     margin-right: 8px !important;
+}
+.margin-r-10{
+    margin-right: 10px !important;
 }
 .top--10{
     top: -12px !important;
@@ -641,6 +647,12 @@ input[type="radio"] {
 .fs-16{
     font-size: 1.3rem;
 }
+.fs-18{
+    font-size: 1.8rem;
+}
+.fs-20{
+    font-size: 2rem;
+}
 .fs-30{
     font-size: 3rem;
 }
@@ -652,4 +664,28 @@ input[type="radio"] {
 }
 .fs-50{
     font-size: 5rem;
+}
+.text-white{
+    color:#FFFFFF;
+}
+.bg-success{
+    background-color: rgb(0,150,136) !important;
+}
+.bg-warning{
+    background-color: #ff9800;
+}
+.bg-royal{
+    background-color: #9C27B0;
+}
+.bg-teal{
+    background-color: #009688;
+}
+.bg-cyan{
+    background-color: #00BCD4;
+}
+.bg-default{
+    background-color: #9e9e9e;
+}
+.bg-info{
+    background-color: #03A9F4;
 }
