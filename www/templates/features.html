@@ -1,5 +1,14 @@
-<ion-view view-title="Features">
-  <ion-content>
-   
-  </ion-content>
+<ion-view view-title="Health Test">
+	<ion-content style="background-color: #edecec;">
+		<ion-card>
+			<ng-include src="'templates/purchase/biometrics.html'" ng-if="context === 'bmi'" replace></ng-include>
+			<ng-include src="'templates/purchase/bmi_results.html'" ng-if="context === 'bmi_results'" replace></ng-include>
+			<ng-include src="'templates/purchase/personal_history.html'" ng-if="context === 'personal_history'" replace></ng-include>
+			<ng-include src="'templates/purchase/history_results.html'" ng-if="context === 'history_results'" replace></ng-include>
+			<ng-include src="'templates/purchase/family_history.html'" ng-if="context === 'family_history'" replace></ng-include>
+			<ng-include src="'templates/purchase/exercise.html'" ng-if="context === 'exercise'" replace></ng-include>
+			<ng-include src="'templates/purchase/exercise_results.html'" ng-if="context === 'exercise_results'" replace></ng-include>
+			<ng-include src="'templates/purchase/eating.html'" ng-if="context === 'eating'" replace></ng-include>
+		</ion-card>
+	</ion-content>
 </ion-view>

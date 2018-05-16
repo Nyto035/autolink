@@ -37,6 +37,12 @@ justify-content: center;
     margin-bottom: 300px;
   
 }
+.zamara-primary{
+    background-color: rgba(40, 45, 83, 1) !important;
+}
+.zamara-success{
+    background-color: rgba(85, 177, 76, 1) !important;
+}
 .list-card{
   
     margin-bottom:50px;
@@ -328,7 +334,8 @@ input{
 }
 .button.button-balanced,.bar.bar-balanced{
     /*background-color: rgb(0,150,136);*/
-    background-color: #2196F3;
+    /*background-color: #2196F3;*/
+    background-color: rgba(40, 45, 83, 1);
 }
 .text-success{
     color: rgb(0,150,136) !important;
@@ -721,4 +728,65 @@ button.ion-log-out:before{
 }
 .bar .title.title-left{
     margin-left:25px;
+}
+.come-in {
+    /*transform: translateY(10px);*/
+    animation: come-in 0.8s forwards ease-in;
+}
+@keyframes come-in {
+    0%   {top: 0;}
+    25%  {top: 20px;}
+    50%  {top: 15px}
+    75%  {top: 10px}
+    100% {top: 0;}
+}
+
+.full-length {
+    /*transform: translateY(10px);*/
+    animation: full-length 0.8s forwards ease-in;
+}
+@keyframes full-length {
+    0%   {width: 0;}
+    25%  {width: 30%;}
+    50%  {width: 60%}
+    75%  {width: 85%}
+    100% {width: 100%;}
+}
+
+
+.slide-down {
+    animation: anim 0.8s 1;
+}
+@keyframes anim {
+  0% {
+    transform: translateY(0);
+  }
+  34.28% {
+    transform: translateY(100%);
+  }
+}
+.modal-fade-in.ng-leave.ng-leave-active{
+    animation: modal-fade-in 1s 1;
+}
+.modal-fade-in{
+    animation: modal-fade-in 0.8s 1;
+}
+@keyframes modal-fade-in{
+    0% {
+        -webkit-transform: scale(0.1);
+        -moz-transform: scale(0.1);
+        -ms-transform: scale(0.1);
+        transform: scale(0.1);
+        opacity: 0;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    64.28% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
 }

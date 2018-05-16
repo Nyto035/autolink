@@ -78,6 +78,16 @@ angular.module('starter.routes', [])
       }
   })
 
+  .state('app.home.test', {
+      cache: false,
+      url: '/hra',
+      views: {
+        'menuContent@app': {
+          templateUrl: 'templates/features.html',
+        }
+      }
+  })
+
   .state('app.sales', {
       cache: false,
       url: '/sales?sales_id&is_open',
@@ -87,7 +97,7 @@ angular.module('starter.routes', [])
       views: {
           'menuContent': {
             templateUrl: 'templates/sales.html',
-            controller: 'app.controllers.aBusinessController'
+            controller: 'app.controllers.homeController'
           }
       }
   })

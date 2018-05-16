@@ -4,6 +4,8 @@ var DB_NAME = "ecko.db";
 angular.module('starter', [
     'ionic',
     'ngCordova',
+    'ngMaterial',
+    'ngMessages',
     // 'starter.controllers',
     'starter.routes',
     // 'starter.services',

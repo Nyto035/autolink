@@ -13,6 +13,36 @@
         $state, $ionicModal, callApi) {
         $scope.title = 'My Businesses';
         $scope.createFields = frmService.createBusiness();
+        $scope.waist = [
+            { key: 'thirty', display: '< 37', 'selected': false },
+            { key: 'forty', display: '37-40', 'selected': false },
+            { key: 'greater', display: '> 40', 'selected': false },
+        ];
+        $scope.exercises = [
+            { key: 'thirty', display: '< 1', 'selected': false },
+            { key: 'forty', display: '1', 'selected': false },
+            { key: 'greater', display: '2-3', 'selected': false },
+            { key: 'greater', display: '4-5', 'selected': false },
+            { key: 'greater', display: '> 5', 'selected': false },
+        ];
+        $scope.fat = [
+            { key: 'thirty', display: '< 1', 'selected': false },
+            { key: 'forty', display: '1-2', 'selected': false },
+            { key: 'greater', display: '3-4', 'selected': false },
+            { key: 'greater', display: '5-6', 'selected': false },
+            { key: 'greater', display: '> 6', 'selected': false },
+        ];
+        $scope.starch = [
+            { key: 'thirty', display: '0-1', 'selected': false },
+            { key: 'forty', display: '2', 'selected': false },
+            { key: 'greater', display: '3', 'selected': false },
+            { key: 'greater', display: '4', 'selected': false },
+            { key: 'greater', display: '> 5', 'selected': false },
+        ];
+        $scope.context = 'bmi';
+        $scope.changeContext = function (val) {
+            $scope.context = val;
+        };
         // $scope.user = authConfig.getUser();
         $ionicPlatform.ready(function () {
             UserService.getLoggedInUsers().then(function (results) {

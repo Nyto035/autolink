@@ -1,0 +1,91 @@
+<div class="padding pad-t-30 pad-l-15 modal-fade-in" style="position: relative;">
+	<div class="login-menu col-12 margin-r-10 margin-b-20">
+        <div class="col-12 grid-header margin-b-10" ng-click="goToState('app.sales')">
+            <div class="col-12">
+                <div class="col-xs-12 title-text" style="padding: 3px 17px;">
+                    <b>Biometrics</b>
+                </div>
+                <div class="col-xs-12" style="padding: 5px 15px 0px;">
+                    <div class="col-12">
+                        <form class="padding pad-t-5">
+                        	<div class="form-cont margin-b-0 margin-t-10"
+				            style="width: 110%;margin-left: -20px;
+				            margin-bottom:15px;padding-left: 10px;">
+				                <div class="group">
+									<input type="number"
+									     name="height" 
+									      placeholder="Enter your height"
+									     ng-model="hra.height">
+									<span class="highlight"></span>
+									<label>Height</label>
+									<span class="highlight"></span>
+									<span class="bar"></span>
+									<label>Height</label>
+				                </div>
+				            </div>
+				            <div class="form-cont margin-b-0 margin-t-10"
+				            style="width: 110%;margin-left: -20px;
+				            margin-bottom:15px;padding-left: 10px;">
+				                <div class="group">
+									<input type="number" required
+									     placeholder="Enter your weight"
+									     name="weight" 
+									     ng-model="hra.weight">
+									<span class="highlight"></span>
+									<label>Weight</label>
+									<span class="highlight"></span>
+									<span class="bar"></span>
+									<label>Weight</label>
+				                </div>
+				            </div>
+				            <div class="form-cont margin-b-0 margin-t-10"
+				            style="width: 110%;margin-left: -20px;
+				            margin-bottom:15px;padding-left: 10px;">
+				                <div class="group">
+									<input type="number" required
+									     placeholder="Autocalculated BMI"
+									     name="bmi" 
+									     ng-model="hra.bmi">
+									<span class="highlight"></span>
+									<label>BMI (autocalculated)</label>
+									<span class="highlight"></span>
+									<span class="bar"></span>
+									<label>BMI (autocalculated)</label>
+				                </div>
+				            </div>
+				            <div class="form-cont margin-b-0 margin-t-0"
+				            style="width: 110%;margin-left: -20px;
+				            margin-bottom:15px;padding-left: 10px;">
+				            	<div class="group">
+				            		<label class="top--5"><small>Waist circumference in inches (for Female)</small></label>
+				            		<div class="col-12 flex pad-t-10" style="flex-direction: row;justify-content: space-between;">
+				            			<div ng-repeat="val in waist" 
+				            			class="circle-input">
+				            				<small>{{val.display}}</small>
+				            			</div>
+				            		</div>
+				            	</div>
+				            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 flex" style="justify-content: space-between;">
+                    	<div class="col-4">
+                    		<button type="button" 
+	                        class="button button-block" ui-sref="app.home">
+	                            Cancel
+	                        </button>
+                    	</div>
+                    	<div class="col-4"></div>
+                    	<div class="col-4">
+                    		<button type="button" 
+	                        class="button button-block button-balanced zamara-primary" ng-click="changeContext('bmi_results')">
+	                            Next
+	                        </button>
+                    	</div>
+                    	
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
