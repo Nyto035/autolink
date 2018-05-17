@@ -39,6 +39,37 @@
             { key: 'greater', display: '4', 'selected': false },
             { key: 'greater', display: '> 5', 'selected': false },
         ];
+        $scope.sugar = [
+            { key: 'thirty', display: '0-3', 'selected': false },
+            { key: 'forty', display: '4-6', 'selected': false },
+            { key: 'greater', display: '7-9', 'selected': false },
+            { key: 'greater', display: '> 9', 'selected': false },
+        ];
+        $scope.fishEating = [
+            { key: 'thirty', display: 'Rarely', 'selected': false },
+            { key: 'forty', display: '1-2', 'selected': false },
+            { key: 'greater', display: '3-4', 'selected': false },
+            { key: 'greater', display: '4-5', 'selected': false },
+            { key: 'greater', display: 'Everyday', 'selected': false },
+        ];
+        $scope.fruit = [
+            { key: 'thirty', display: 'None', 'selected': false },
+            { key: 'forty', display: '1-3', 'selected': false },
+            { key: 'greater', display: '> 4', 'selected': false },
+        ];
+        $scope.vegetables = [
+            { key: 'thirty', display: 'None', 'selected': false },
+            { key: 'forty', display: '1-2', 'selected': false },
+            { key: 'forty', display: '3-4', 'selected': false },
+            { key: 'greater', display: '> 4', 'selected': false },
+        ];
+        $scope.drinks = [
+            { key: 'thirty', display: '< 500ml', 'selected': false },
+            { key: 'forty', display: '1L-2L', 'selected': false },
+            { key: 'forty', display: '3L-4L', 'selected': false },
+            { key: 'greater', display: '5L-6L', 'selected': false },
+            { key: 'greater', display: '> 6L', 'selected': false },
+        ];
         $scope.context = 'bmi';
         $scope.changeContext = function (val) {
             $scope.context = val;

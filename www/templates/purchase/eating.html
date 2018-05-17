@@ -42,7 +42,7 @@
                             margin-bottom:15px;padding-left: 10px;">
                                 <div class="group">
                                     <label class="top--5"><small>
-                                        How many servings of sweet foods like cake, biscuits, lollipops or chocolate do you consume in a day??</small></label>
+                                        How many servings of sweet foods like cake, biscuits, lollipops or chocolate do you consume in a day?</small></label>
                                     <div class="col-12 flex margin-t-40 pad-t-30 margin-b-20" style="flex-direction: row;justify-content: space-between;">
                                         <div ng-repeat="val in waist track by $index" 
                                         class="circle-input">
@@ -55,6 +55,110 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- Salt question -->
+                            <div class="form-cont margin-b-0 margin-t-0"
+                            style="width: 110%;margin-left: -20px;
+                            margin-bottom:15px;padding-left: 10px;">
+                                <div class="group">
+                                    <label class="top--5"><small>
+                                        How often do you eat salty foods like crisps, canned foods, packet soups etc?</small></label>
+                                    <div class="col-12 flex margin-t-40 pad-t-30 margin-b-20" style="flex-direction: row;justify-content: space-between;">
+                                        <div ng-repeat="val in waist track by $index" 
+                                        class="circle-input">
+                                            <small ng-if="$index === 0">
+                                            <small>
+                                                None</small></small>
+                                            <small ng-if="$index === 1">1 - 2</small>
+                                            <small ng-if="$index === 2"> > 2</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of salty -->
+
+                            <!-- Start of sugar -->
+                            <div class="form-cont margin-b-0 margin-t-0"
+                            style="width: 110%;margin-left: -20px;
+                            margin-bottom:15px;padding-left: 10px;">
+                                <div class="group">
+                                    <label class="top--5"><small>How many teaspoons of sugar do you consume daily in hot drinks, added to foods?</small></label>
+                                    <div class="col-12 flex margin-t-40 pad-t-0 margin-b-20" style="flex-direction: row;justify-content: space-between;">
+                                        <div ng-repeat="val in sugar" 
+                                        class="circle-input">
+                                            <small>{{val.display}}</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of sugar -->
+
+                            <!-- Fish eating -->
+                            <div class="form-cont margin-b-0 margin-t-0"
+                            style="width: 110%;margin-left: -20px;
+                            margin-bottom:15px;padding-left: 10px;">
+                                <div class="group">
+                                    <label class="top--5"><small>How many times do you usually eat fish in a week?</small></label>
+                                    <div class="col-12 flex margin-t-40 pad-t-0 margin-b-20" style="flex-direction: row;justify-content: space-between;">
+                                        <div ng-repeat="val in sugar" 
+                                        class="circle-input">
+                                            <small>{{val.display}}</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of fish eating -->
+
+                            <!-- Fruit eating -->
+                            <div class="form-cont margin-b-0 margin-t-0"
+                            style="width: 110%;margin-left: -20px;
+                            margin-bottom:15px;padding-left: 10px;">
+                                <div class="group">
+                                    <label class="top--5"><small>How many pieces of fruit do you usually eat a day?</small></label>
+                                    <div class="col-12 flex margin-t-40 pad-t-0 margin-b-20" style="flex-direction: row;justify-content: space-between;">
+                                        <div ng-repeat="val in fruit" 
+                                        class="circle-input">
+                                            <small>{{val.display}}</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of fruit eating -->
+                            <!-- Vegetables eating -->
+                            <div class="form-cont margin-b-0 margin-t-0"
+                            style="width: 110%;margin-left: -20px;
+                            margin-bottom:15px;padding-left: 10px;">
+                                <div class="group">
+                                    <label class="top--5"><small>How many servings of vegetables (excluding potatoes) do you usually eat a day?</small></label>
+                                    <div class="col-12 flex margin-t-40 pad-t-0 margin-b-20" style="flex-direction: row;justify-content: space-between;">
+                                        <div ng-repeat="val in vegetables" 
+                                        class="circle-input">
+                                            <small>{{val.display}}</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of fruit eating -->
+
+                            <!-- Sovt drinks -->
+                            <div class="form-cont margin-b-0 margin-t-0"
+                            style="width: 110%;margin-left: -20px;
+                            margin-bottom:15px;padding-left: 10px;">
+                                <div class="group">
+                                    <label class="top--5"><small>How much soft drink do you consume in a week on average?</small></label>
+                                    <div class="col-12 flex margin-t-40 pad-t-0 margin-b-20" style="flex-direction: row;justify-content: space-between;">
+                                        <div ng-repeat="val in drinks" 
+                                        class="rec-input col-12">
+                                            <div class="col-12">
+                                                <i class="icon ion-ios-pint"></i>
+                                            </div>
+                                            <div class="col-12">
+                                                <small>{{val.display}}</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of fruit eating -->
                         </form>
                     </div>
                     <div class="col-12 flex" style="justify-content: space-between;">

@@ -714,3 +714,22 @@ input[type="radio"] {
     justify-content: center;
     align-items: center;
 }
+.rec-input{
+    background-color: #e0e0e0;
+    width:50px;
+}
+.rec-input>.col-12{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    padding-top: 3px;
+}
+.rec-input>.col-12>i{
+    font-size: 2rem;
+}
+.rec-input>.col-12>small{
+    font-size: 0.7rem;
+    margin-top: 3px;
+    font-weight: 600;
+}
