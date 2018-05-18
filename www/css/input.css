@@ -650,6 +650,9 @@ input[type="radio"] {
     stroke: #ffa700;
   }
 }
+.fs-15{
+    font-size: 1.5rem;
+}
 .fs-16{
     font-size: 1.3rem;
 }
@@ -675,7 +678,7 @@ input[type="radio"] {
     font-size: 5rem;
 }
 .text-white{
-    color:#FFFFFF;
+    color:#FFFFFF !important;
 }
 .text-muted{
     color:#424242;

@@ -96,7 +96,7 @@ angular.module('starter.routes', [])
       },*/
       views: {
           'menuContent': {
-            templateUrl: 'templates/sales.html',
+            templateUrl: 'templates/expenses/home_active_user.html',
             controller: 'app.controllers.homeController'
           }
       }

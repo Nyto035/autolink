@@ -36,7 +36,7 @@
           </div>
           <div class="sidebar-details col-11">
               <div class="col-xs-12">{{business.name}}</div>
-              <div class="col-xs-12 pad-t-0"><small>{{user.email}}</small>
+              <div class="col-xs-12 pad-t-0"><small>test@domain.com</small>
           </div>
       </div>
     </ion-header-bar>
@@ -46,23 +46,19 @@
           <div class="rest side-scroll">
           <ion-item menu-close ui-sref="app.home" ui-sref-active="active">
                <i class="icon ion-monitor ion-left text-warning"></i>
-                &nbsp;&nbsp;&nbsp;<small>Home</small>
+                &nbsp;&nbsp;&nbsp;<small>Home <small>(1st time user)</small></small>
           </ion-item>
           <ion-item menu-close ui-sref="app.sales" ui-sref-active="active">
                <i class="icon ion-android-cart ion-left text-primary"></i>
-                &nbsp;&nbsp;&nbsp;<small>Sales</small>
+                &nbsp;&nbsp;&nbsp;<small>Home <small>(active user)</small></small>
           </ion-item>
           <ion-item menu-close ui-sref="app.purchases" ui-sref-active="active">
-              <i class="icon ion-cash ion-left text-success"></i>
-              &nbsp;&nbsp;&nbsp;<small>Purchases</small>
+               <i class="icon ion-android-watch ion-left text-success"></i>
+                &nbsp;&nbsp;&nbsp;<small>Fitness Tracking</small>
           </ion-item>
-          <ion-item ui-sref-active="active" menu-close ui-sref="app.expenses">
-              <i class="icon ion-card ion-left text-warning"></i>
-              &nbsp;&nbsp;&nbsp;<small>Expenses</small>
-          </ion-item>
-          <ion-item ui-sref-active="active" menu-close ui-sref="app.dashboard" class="list-grow-animation" >
-              <i class="icon ion-speedometer ion-left text-success"></i>
-              &nbsp;&nbsp;&nbsp;<small>Business Summary</small>
+          <ion-item menu-close ui-sref="app.purchases" ui-sref-active="active">
+               <i class="icon ion-android-restaurant ion-left text-primary"></i>
+                &nbsp;&nbsp;&nbsp;<small>Health Tips</small>
           </ion-item>
         </div>
         </div>

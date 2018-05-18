@@ -1,0 +1,246 @@
+<div class="padding pad-t-30 pad-l-15 modal-fade-in" style="position: relative;">
+	<div class="login-menu col-12 margin-r-10 margin-b-20">
+        <div class="col-12 grid-header margin-b-10" ng-click="goToState('app.sales')">
+            <div class="col-12">
+                <div class="col-xs-12 title-text" style="padding: 3px 17px;">
+                    <b>Stress</b>
+                </div>
+                <div class="col-xs-12" style="padding: 5px 15px 0px;">
+                    <div class="col-12">
+                        <form class="padding pad-t-5">
+				            <!-- Other conditional section -->
+				            <div class="col-12">
+				            	<div class="form-cont margin-b-0 margin-t-10"
+					            style="width: 110%;margin-left: -20px;
+					            margin-bottom:15px;padding-left: 10px;">
+					            	<div class="group">
+					            		<label class="top--5 margin-b-30">
+					            			<small>
+												How would you describe your sleep pattern?
+											</small>
+										</label>
+					            		<div class="col-12 margin-t-40 pad-l-5">
+	           								<md-radio-group ng-model="hra.frequency">
+										      <md-radio-button value="NO" aria-label="Label 1">
+										      	<small>
+										      		I sleep soundly and wake feeling rested all the time
+										      	</small>
+										      </md-radio-button>
+										      <md-radio-button value="NO" aria-label="Label 1">
+										      	<small>
+										      		I sleep soundly and wake feeling rested most of the time
+										      	</small>
+										      </md-radio-button>
+										      <md-radio-button value="NO" aria-label="Label 1">
+										      	<small>
+										      		Some nights I have a hard time falling or staying sleep, or I wake up very early in the morning
+										      	</small>
+										      </md-radio-button>
+										      <md-radio-button value="NO" aria-label="Label 1">
+										      	<small>
+										      		Most nights I have a hard time falling or staying asleep, or I wake up very early in the morning
+										      	</small>
+										      </md-radio-button>
+										    </md-radio-group>
+					            		</div>
+					            	</div>
+					            </div>
+	                            <!-- End of fish eating -->
+	                            <!-- Readiness to change -->
+	                            <div class="form-cont margin-b-0 margin-t-10"
+					            style="width: 110%;margin-left: -20px;
+					            margin-bottom:15px;padding-left: 10px;">
+					            	<div class="group">
+					            		<label class="top--5 margin-b-30">
+					            			<small>
+												Do you have unexplained headaches, muscle aches or back aches?
+											</small>
+										</label>
+					            		<div class="col-12 margin-t-40 pad-l-5">
+	           								<md-radio-group ng-model="hra.frequency">
+										      <md-radio-button value="{{val.value}}" aria-label="Label 1"
+										      ng-repeat="val in stress">
+										      	<small>{{val.display}}</small>
+										      </md-radio-button>
+										    </md-radio-group>
+					            		</div>
+					            	</div>
+					            </div>
+					            <div class="form-cont margin-b-0 margin-t-10"
+					            style="width: 110%;margin-left: -20px;
+					            margin-bottom:15px;padding-left: 10px;">
+					            	<div class="group">
+					            		<label class="top--5 margin-b-30">
+					            			<small>
+												Do you have unexplained abdominal pain, discomfort, bloating, irregular bowel movements/diarrhea, constipation?
+											</small>
+										</label>
+					            		<div class="col-12 margin-t-40 pad-l-5 pad-t-20">
+	           								<md-radio-group ng-model="hra.frequency">
+										      <md-radio-button value="{{val.value}}" aria-label="Label 1"
+										      ng-repeat="val in stress">
+										      	<small>{{val.display}}</small>
+										      </md-radio-button>
+										    </md-radio-group>
+					            		</div>
+					            	</div>
+					            </div>
+					            <div class="form-cont margin-b-0 margin-t-10"
+					            style="width: 110%;margin-left: -20px;
+					            margin-bottom:15px;padding-left: 10px;">
+					            	<div class="group">
+					            		<label class="top--5 margin-b-30">
+					            			<small>
+												Do you have unexplained feelings of anxiety, palpitations, chest tightness, difficulty breathing?
+											</small>
+										</label>
+					            		<div class="col-12 margin-t-40 pad-l-5">
+	           								<md-radio-group ng-model="hra.frequency">
+										      <md-radio-button value="{{val.value}}" aria-label="Label 1"
+										      ng-repeat="val in stress">
+										      	<small>{{val.display}}</small>
+										      </md-radio-button>
+										    </md-radio-group>
+					            		</div>
+					            	</div>
+					            </div>
+					            <div class="form-cont margin-b-0 margin-t-10"
+					            style="width: 110%;margin-left: -20px;
+					            margin-bottom:15px;padding-left: 10px;">
+					            	<div class="group">
+					            		<label class="top--5 margin-b-30">
+					            			<small>
+												In the last month, how often have you felt nervous and “stressed”?
+											</small>
+										</label>
+					            		<div class="col-12 margin-t-40 pad-l-5">
+	           								<md-radio-group ng-model="hra.frequency">
+										      <md-radio-button value="{{val.value}}" aria-label="Label 1"
+										      ng-repeat="val in stress">
+										      	<small>{{val.display}}</small>
+										      </md-radio-button>
+										    </md-radio-group>
+					            		</div>
+					            	</div>
+					            </div>
+					            <div class="form-cont margin-b-0 margin-t-10"
+					            style="width: 110%;margin-left: -20px;
+					            margin-bottom:15px;padding-left: 10px;">
+					            	<div class="group">
+					            		<label class="top--5 margin-b-30">
+					            			<small>
+												In the last month, how often have you felt confident about your ability to handle your personal problems?
+											</small>
+										</label>
+					            		<div class="col-12 margin-t-40 pad-l-5 pad-t-20">
+	           								<md-radio-group ng-model="hra.frequency">
+										      <md-radio-button value="{{val.value}}" aria-label="Label 1"
+										      ng-repeat="val in stress">
+										      	<small>{{val.display}}</small>
+										      </md-radio-button>
+										    </md-radio-group>
+					            		</div>
+					            	</div>
+					            </div>
+					            <div class="form-cont margin-b-0 margin-t-10"
+					            style="width: 110%;margin-left: -20px;
+					            margin-bottom:15px;padding-left: 10px;">
+					            	<div class="group">
+					            		<label class="top--5 margin-b-30">
+					            			<small>
+												In the last month, how often have you felt confident about your ability to handle your personal problems?
+											</small>
+										</label>
+					            		<div class="col-12 margin-t-40 pad-l-5 pad-t-20">
+	           								<md-radio-group ng-model="hra.frequency">
+										      <md-radio-button value="{{val.value}}" aria-label="Label 1"
+										      ng-repeat="val in stress">
+										      	<small>{{val.display}}</small>
+										      </md-radio-button>
+										    </md-radio-group>
+					            		</div>
+					            	</div>
+					            </div>
+					            <div class="form-cont margin-b-0 margin-t-10"
+					            style="width: 110%;margin-left: -20px;
+					            margin-bottom:15px;padding-left: 10px;">
+					            	<div class="group">
+					            		<label class="top--5 margin-b-30">
+					            			<small>
+												In the last month, how often have you found that you could not cope with all the things that you had to do?
+											</small>
+										</label>
+					            		<div class="col-12 margin-t-40 pad-l-5 pad-t-20">
+	           								<md-radio-group ng-model="hra.frequency">
+										      <md-radio-button value="{{val.value}}" aria-label="Label 1"
+										      ng-repeat="val in stress">
+										      	<small>{{val.display}}</small>
+										      </md-radio-button>
+										    </md-radio-group>
+					            		</div>
+					            	</div>
+					            </div>
+					            <div class="form-cont margin-b-0 margin-t-10"
+					            style="width: 110%;margin-left: -20px;
+					            margin-bottom:15px;padding-left: 10px;">
+					            	<div class="group">
+					            		<label class="top--5 margin-b-30">
+					            			<small>
+												In the last month, how often have you been angered because of things that were outside of your control?
+											</small>
+										</label>
+					            		<div class="col-12 margin-t-40 pad-l-5 pad-t-20">
+	           								<md-radio-group ng-model="hra.frequency">
+										      <md-radio-button value="{{val.value}}" aria-label="Label 1"
+										      ng-repeat="val in stress">
+										      	<small>{{val.display}}</small>
+										      </md-radio-button>
+										    </md-radio-group>
+					            		</div>
+					            	</div>
+					            </div>
+					            <div class="form-cont margin-b-0 margin-t-10"
+					            style="width: 110%;margin-left: -20px;
+					            margin-bottom:15px;padding-left: 10px;">
+					            	<div class="group">
+					            		<label class="top--5 margin-b-30">
+					            			<small>
+												In the last month, how often have you felt difficulties were piling up so high that you could not overcome them?
+											</small>
+										</label>
+					            		<div class="col-12 margin-t-40 pad-t-20 pad-l-5">
+	           								<md-radio-group ng-model="hra.frequency">
+										      <md-radio-button value="{{val.value}}" aria-label="Label 1"
+										      ng-repeat="val in stress">
+										      	<small>{{val.display}}</small>
+										      </md-radio-button>
+										    </md-radio-group>
+					            		</div>
+					            	</div>
+					            </div>
+	                            <!-- End of readiness -->
+				            </div>
+				            <!-- End of conditional section -->
+                        </form>
+                    </div>
+                    <div class="col-12 flex" style="justify-content: space-between;">
+                    	<div class="col-4">
+                    		<button type="button" 
+	                        class="button button-block" ng-click="changeContext('drinking_results')">
+	                            Previous
+	                        </button>
+                    	</div>
+                    	<div class="col-4"></div>
+                    	<div class="col-4">
+                    		<button type="button" 
+	                        class="button button-block button-balanced zamara-success" ng-click="changeContext('finished')">
+	                            Finished
+	                        </button>
+                    	</div>
+                    	
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

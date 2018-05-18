@@ -45,7 +45,7 @@
             { key: 'greater', display: '7-9', 'selected': false },
             { key: 'greater', display: '> 9', 'selected': false },
         ];
-        $scope.fishEating = [
+        $scope.fisheating = [
             { key: 'thirty', display: 'Rarely', 'selected': false },
             { key: 'forty', display: '1-2', 'selected': false },
             { key: 'greater', display: '3-4', 'selected': false },
@@ -69,6 +69,24 @@
             { key: 'forty', display: '3L-4L', 'selected': false },
             { key: 'greater', display: '5L-6L', 'selected': false },
             { key: 'greater', display: '> 6L', 'selected': false },
+        ];
+        $scope.smoking = [
+            { key: 'thirty', display: 'None', 'selected': false },
+            { key: 'greater', display: 'Some', 'selected': false },
+            { key: 'greater', display: 'Everyday', 'selected': false },
+        ];
+        $scope.sticks = [
+            { key: 'thirty', display: '< 5', 'selected': false },
+            { key: 'forty', display: '5-30', 'selected': false },
+            { key: 'greater', display: '31-60', 'selected': false },
+            { key: 'greater', display: '> 60', 'selected': false },
+        ];
+        $scope.stress = [
+            { value: 'NEVER', display: 'Never' },
+            { value: 'SELDOM', display: 'Seldom' },
+            { value: 'SOMETIMES', display: 'Sometimes' },
+            { value: 'OFTEN', display: 'Often' },
+            { value: 'ALWAYS', display: 'Always' },
         ];
         $scope.context = 'bmi';
         $scope.changeContext = function (val) {

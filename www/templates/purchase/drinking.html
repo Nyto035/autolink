@@ -1,0 +1,126 @@
+<div class="padding pad-t-30 pad-l-15 modal-fade-in" style="position: relative;">
+	<div class="login-menu col-12 margin-r-10 margin-b-20">
+        <div class="col-12 grid-header margin-b-10" ng-click="goToState('app.sales')">
+            <div class="col-12">
+                <div class="col-xs-12 title-text" style="padding: 3px 17px;">
+                    <b>Drinking</b>
+                </div>
+                <div class="col-xs-12" style="padding: 5px 15px 0px;">
+                    <div class="col-12">
+                        <form class="padding pad-t-5">
+				            <div class="form-cont margin-b-0 margin-t-10"
+				            style="width: 110%;margin-left: -20px;
+				            margin-bottom:15px;padding-left: 10px;">
+				            	<div class="group">
+				            		<label class="top--5 margin-b-30">
+				            			<small>
+											Do you drink?
+										</small>
+									</label>
+				            		<div class="col-12 margin-t-40 pad-l-5">
+           								<md-radio-group ng-model="hra.drinking">
+									      <md-radio-button value="NO" aria-label="Label 1">No</md-radio-button>
+									      <md-radio-button value="YES" aria-label="Label 3">Yes</md-radio-button>
+									    </md-radio-group>
+									    
+				            		</div>
+				            	</div>
+				            </div>
+
+				            <!-- Other conditional section -->
+				            <div class="col-12" ng-if="hra.drinking === 'YES'">
+				            	<div class="form-cont margin-b-0 margin-t-10"
+					            style="width: 110%;margin-left: -20px;
+					            margin-bottom:15px;padding-left: 10px;">
+					            	<div class="group">
+					            		<label class="top--5 margin-b-30">
+					            			<small>
+												How often do you have a drink containing alcohol?
+											</small>
+										</label>
+					            		<div class="col-12 margin-t-40 pad-l-5">
+	           								<md-radio-group ng-model="hra.frequency">
+										      <md-radio-button value="NO" aria-label="Label 1">Monthly or less</md-radio-button>
+										      <md-radio-button value="NO" aria-label="Label 1">2 -4 times a month</md-radio-button>
+										      <md-radio-button value="NO" aria-label="Label 1">2 -3 times a week</md-radio-button>
+										      <md-radio-button value="NO" aria-label="Label 1">4 or more times a week</md-radio-button>
+										    </md-radio-group>
+					            		</div>
+					            	</div>
+					            </div>
+					            <div class="form-cont margin-b-0 margin-t-0"
+	                            style="width: 110%;margin-left: -20px;
+	                            margin-bottom:15px;padding-left: 10px;">
+	                                <div class="group">
+	                                    <label class="top--5"><small>How many drinks containing alcohol do you have on a typical day when you are drinking?</small></label>
+	                                    <div class="col-12 flex margin-t-40 pad-t-0 margin-b-20" style="flex-direction: row;justify-content: space-between;">
+	                                        <div ng-repeat="val in exercises" 
+	                                        class="circle-input">
+	                                        	<small>
+	                                            	<small>{{val.display}}</small>
+	                                            </small>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                            <!-- End of fish eating -->
+	                            <!-- Readiness to change -->
+	                            <div class="form-cont margin-b-0 margin-t-10"
+					            style="width: 110%;margin-left: -20px;
+					            margin-bottom:15px;padding-left: 10px;">
+					            	<div class="group">
+					            		<label class="top--5 margin-b-30">
+					            			<small>
+												Select the highest one true response
+											</small>
+										</label>
+					            		<div class="col-12 margin-t-40 pad-l-5">
+	           								<md-radio-group ng-model="hra.frequency">
+										      <md-radio-button value="NO" aria-label="Label 1">
+										      	<small>I have felt I should cut down on my drinking</small>
+										      </md-radio-button>
+										      <md-radio-button value="NO" aria-label="Label 1">
+										      	<small>
+										      		People have annoyed me by criticizing me for my drinking
+										      	</small>
+										      </md-radio-button>
+										      <md-radio-button value="NO" aria-label="Label 1">
+										      	<small>
+										      		I have felt guilty about my drinking
+										      	</small>
+										      </md-radio-button>
+										      <md-radio-button value="NO" aria-label="Label 1">
+										      	<small>
+										      		I have needed a drink first thing in the morning to steady my nerves
+										      	</small>
+										      </md-radio-button>
+										    </md-radio-group>
+					            		</div>
+					            	</div>
+					            </div>
+	                            <!-- End of readiness -->
+				            </div>
+				            <!-- End of conditional section -->
+                        </form>
+                    </div>
+                    <div class="col-12 flex" style="justify-content: space-between;">
+                    	<div class="col-4">
+                    		<button type="button" 
+	                        class="button button-block" ng-click="changeContext('smoking_results')">
+	                            Previous
+	                        </button>
+                    	</div>
+                    	<div class="col-4"></div>
+                    	<div class="col-4">
+                    		<button type="button" 
+	                        class="button button-block button-balanced zamara-primary" ng-click="changeContext('drinking_results')">
+	                            Next
+	                        </button>
+                    	</div>
+                    	
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
